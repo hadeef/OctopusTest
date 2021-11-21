@@ -26,7 +26,7 @@ namespace OctopusTest
             string deploymentDataFilePath = DataFilePath(DataFiles.deploymentFileName);
             DeploymentRepository deployments = DeploymentRepository.GetInstanceByJsonFile(deploymentDataFilePath);
 
-            var s3 = new ReleaseRetentionService(projects, environments, releases, deployments);
+            ReleaseRetentionService service = new ReleaseRetentionService(projects, environments, releases, deployments);
         }
     }
 }
