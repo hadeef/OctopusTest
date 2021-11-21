@@ -14,7 +14,6 @@ namespace OctopusTest
         public void GetLatestDeploymentOfProjectInEnvironment_StateUnderTest_ExpectedBehavior()
         {
             // Arrange
-
             ReleaseRetentionService service = ReleaseRetentionServiceProvider.GetReleaseRetentionServiceInstance();
             string projectId = "TestProject-1";
             string environmentId = "Environment-1";

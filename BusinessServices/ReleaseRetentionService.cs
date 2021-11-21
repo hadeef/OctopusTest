@@ -12,8 +12,9 @@ namespace BusinessServices
 {
     //Assumptions for ReleaseRetentionService class: 
     // 1- Retention list includes all future releases of current deployed project which were released but not deployed yet.
-    // 2- This implementation assumes there is no incompatibility on release date of any release and it's deployment date.
-    // For example there will be no release which it's deployment date is before it's release date.
+    // 2- This implementation assumes there is no incompatibility on any release date and it's deployment date.For example there
+    //    will be no release which it's deployment date is before it's release date.
+
     public class ReleaseRetentionService
     {
         private ProjectRepository _projects;
