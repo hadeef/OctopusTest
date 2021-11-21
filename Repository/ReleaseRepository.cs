@@ -10,7 +10,7 @@ namespace Repository
     //This class implements Singleton pattern.
     public sealed class ReleaseRepository : GenericRepository<Release, string, string>
     {
-        private static readonly object lockObj = new object();
+        private static readonly object lockObj = new object(); 
         private static ReleaseRepository _instance;
 
         private ReleaseRepository(string dataFilePath)
